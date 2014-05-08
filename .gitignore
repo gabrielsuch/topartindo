@@ -9,3 +9,4 @@ coverage
 build/Release
 run
 node_modules
+.idea
