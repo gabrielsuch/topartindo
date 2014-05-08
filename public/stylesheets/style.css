@@ -23,7 +23,7 @@ section {
 .product {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
-  height: 100px;
+  min-height: 220px;
   background-color: #fff;
   margin: 0 15px 15px 0;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.07);
@@ -34,6 +34,18 @@ section {
 #content {
   padding-top: 10px;
 }
+.pic {
+  width: 100%;
+  border-radius: 4px 4px 0 0;
+  -webkit-border-radius: 4px 4px 0 0;
+  -moz-border-radius: 4px 4px 0 0;
+}
 p {
   margin-top: 0;
+}
+h3 {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
