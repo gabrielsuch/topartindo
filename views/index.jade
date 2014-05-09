@@ -2,45 +2,14 @@ extends layout
 
 block content
 
-  section(id='description')
+  section#description
     p Hey Guys! I am going away and I don't intend to back soon, so I am selling some of my stuff. <br /> If you are interesting in any of them, please let me know. Thank you!
 
-  section(id='content')
-    div(class='pure-g')
-      div(class='pure-u-1-4')
-        div(class='product')
-          img(src='/images/products/carro.jpg' class='pic')
-          h3 Peugeot 308 Allure 2.0 2014
+  section#content
+    div.pure-g
 
-      div(class='pure-u-1-4')
-        div(class='product')
-          img(src='/images/products/microondas.jpg' class='pic')
-          h3 Micro-ondas Consul 30L
-
-      div(class='pure-u-1-4')
-        div(class='product')
-          img(src='/images/products/geladeira.jpg' class='pic')
-          h3 Geladeira GE 445L
-
-      div(class='pure-u-1-4')
-        div(class='product')
-          img(src='/images/products/iphone.jpg' class='pic')
-          h3 iPhone 4 16Gb
-
-      div(class='pure-u-1-4')
-        div(class='product')
-          img(src='/images/products/lavadora.jpg' class='pic')
-          h3 Lavadora Brastemp 10Kg
-
-      div(class='pure-u-1-4')
-        div(class='product')
-          img(src='/images/products/tv.jpg' class='pic')
-          h3 Smart TV Samsung LED 40
-
-      div(class='pure-u-1-4')
-        div(class='product')
-          img(src='/images/products/tenis.jpg' class='pic')
-          h3 Nike Zoom Soldier VII
-
-      div(class='pure-u-1-4')
-        div(class='product')
+      each product in products
+        div.pure-u-1-4
+          div.product
+            img(src='/images/products/#{product.photo}' class='pic')
+            h3 #{product.title}
