@@ -10,6 +10,10 @@ var Product = new Schema({
 
 mongoose.model('Product', Product);
 
-mongoose.connect('mongodb://localhost/topartindo');
+var mongoUri = process.env.MONGOLAB_URI ||
+    process.env.MONGOHQ_URL ||
+    'mongodb://localhost/topartindo';
+
+mongoose.connect(mongoUri);
 
 module.exports = mongoose;
