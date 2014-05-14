@@ -7,7 +7,6 @@ router.get('/', function(req, res) {
   Product.find({}, function(err, products) {
     res.render('index', { products: products });
   });
-
 });
 
 module.exports = router;
