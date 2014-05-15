@@ -12,5 +12,14 @@ block content
       each product in products
         div.pure-u-1-4
           div.product
-            img(src='/images/products/#{product.photo}' class='pic')
+            img(src='/images/products/#{product.photo}' class='pic' data-toggle='modal' data-target='#myModal')
             h3 #{product.title}
+
+    div(class='modal fade' id='myModal' tabindex='-1' role='dialog')
+      div.modal-dialog
+        div.modal-content
+          div.modal-header
+            button(type='button' class='close' data-dismiss='modal' aria-labelledby='myModalLabel' aria-hidden='true') &times;
+            h4(class='modal-title') Product Title
+          div.modal-body
+            p Product Details
