@@ -16,6 +16,11 @@ header {
   display: block;
   text-align: center;
 }
+
+header img {
+  margin-top: 50px;
+}
+
 section {
   width: 1000px;
   margin: 0 auto;
