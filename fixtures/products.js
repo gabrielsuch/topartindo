@@ -12,7 +12,7 @@ exports.Product = [
     { title: 'Refatoração',                 description: '', price: 50,      photo: 'livro-refactoring.jpg' },
     { title: 'Refatoração para Padrões',    description: '', price: 50,      photo: 'livro-ref-padroes.jpg' },
     { title: 'Clean Code',                  description: '', price: 50,      photo: 'livro-clean-code.jpg' },
-    { title: 'Design Patterns',             description: '', price: 50,      photo: 'livro-dp.jpg' },
+    { title: 'Design Patterns',             description: '', price: 60,      photo: 'livro-dp.jpg' },
     { title: 'POJOs em Ação',               description: '', price: 50,      photo: 'livro-pojo.jpg' },
     { title: 'Java Persistance',            description: '', price: 50,      photo: 'livro-jpa.jpg' },
     { title: 'AspectJ in Action',           description: '', price: 50,      photo: 'livro-aspect.jpg' },
@@ -25,5 +25,10 @@ exports.Product = [
     { title: 'JSF 2.0',                     description: '', price: 50,      photo: 'livro-jsf2.jpg' },
     { title: 'Use a Cabeça - Java!',        description: '', price: 50,      photo: 'livro-java-head-first.jpg' },
     { title: 'SCJP - Guia',                 description: '', price: 30,      photo: 'livro-scjp.jpg' },
+    { title: 'Growing OOP Guided by Tests', description: '', price: 75,      photo: 'livro-growing.jpg' },
+    { title: 'UFC 3 - Xbox',                description: '', price: 60,      photo: 'jogo-ufc.jpg' },
+    { title: 'PES 2013 - Xbox',             description: '', price: 40,      photo: 'jogo-pes.jpg' },
+    { title: 'NBA 2012 - Xbox',             description: '', price: 30,      photo: 'jogo-nba.jpg' },
+    { title: 'Rock Smith - Xbox',           description: '', price: 90,      photo: 'jogo-rock.jpg' },
     { title: 'Nike Zoom Soldier VII',       description: '', price: 350,     photo: 'tenis.jpg' }
 ];
