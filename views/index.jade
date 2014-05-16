@@ -12,7 +12,7 @@ block content
       each product in products
         div.pure-u-1-4
           div.product
-            img(src='/images/products/#{product.photo}' class='pic' data-toggle='modal' data-target='#myModal')
+            img(src='/images/products/#{product.photo}' id='#{product._id}' class='pic' data-toggle='modal' data-target='#myModal')
             h3 #{product.title}
 
     div(class='modal fade' id='myModal' tabindex='-1' role='dialog')
@@ -22,4 +22,18 @@ block content
             button(type='button' class='close' data-dismiss='modal' aria-labelledby='myModalLabel' aria-hidden='true') &times;
             h4(class='modal-title') Product Title
           div.modal-body
-            p Product Details
+            h5.price
+            p.product-info
+
+  script
+    |  $(".pic").click(function() {
+    |    loadProduct(this.id);
+    |    $('#myModal').modal('show');
+    |  });
+    |  function loadProduct(id) {
+    |    $.get("/products/"+id, function(data) {
+    |      $(".modal-title").text(data.title);
+    |      $(".price").text("R$ " + data.price);
+    |      $(".product-info").text(data.description);
+    |    });
+    |  }

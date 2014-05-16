@@ -30,5 +30,13 @@ exports.Product = [
     { title: 'PES 2013 - Xbox',             description: '', price: 40,      photo: 'jogo-pes.jpg' },
     { title: 'NBA 2012 - Xbox',             description: '', price: 30,      photo: 'jogo-nba.jpg' },
     { title: 'Rock Smith - Xbox',           description: '', price: 90,      photo: 'jogo-rock.jpg' },
+    { title: 'Algoritmos - Guia essencial', description: '', price: 45,      photo: 'livro-algoritmos.jpg' },
+    { title: 'JSF, JPA, Spring',            description: '', price: 35,      photo: 'livro-jsf3.jpg' },
+    { title: 'Java na Web com JSF',         description: '', price: 15,      photo: 'livro-jsf4.jpg' },
+    { title: 'Programador Pragmatico',      description: '', price: 50,      photo: 'livro-prag.jpg' },
+    { title: 'Startup',                     description: '', price: 15,      photo: 'livro-startup.jpg' },
+    { title: 'A cabeça de Steve Jobs',      description: '', price: 25,      photo: 'livro-steve.jpg' },
+    { title: 'Entendendo e dominando PHP',  description: '', price: 25,      photo: 'livro-php2.jpg' },
+    { title: 'REST in Practice',            description: '', price: 75,      photo: 'livro-rest.jpg' },
     { title: 'Nike Zoom Soldier VII',       description: '', price: 350,     photo: 'tenis.jpg' }
 ];
