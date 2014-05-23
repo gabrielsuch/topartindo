@@ -27,13 +27,10 @@ block content
 
   script
     |  $(".pic").click(function() {
-    |    loadProduct(this.id);
-    |    $('#myModal').modal('show');
-    |  });
-    |  function loadProduct(id) {
-    |    $.get("/products/"+id, function(data) {
+    |    $.get("/products/"+this.id, function(data) {
     |      $(".modal-title").text(data.title);
     |      $(".price").text("R$ " + data.price);
     |      $(".product-info").text(data.description);
+    |      $('#myModal').modal('show');
     |    });
-    |  }
+    |  });
